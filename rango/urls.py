@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIAROOT)
+    url(r'^about/', views.about, name='about')
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Create your views here.

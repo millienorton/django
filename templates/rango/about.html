@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>About</title>
+    </head>
+
+    <body>
+        <div>
+            This tutorial has been put together by Millie Norton! <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <img src="{% static "images/yosemite2.jpg" %}"/><br />
+            <img src="{{MEDIA_URL}}cat.jpg">
+        </div>
+    </body>
+</html>
