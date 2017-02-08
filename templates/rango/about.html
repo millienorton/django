@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
-    <head>
-        <title>About</title>
-    </head>
+{% block title_block %}
+    About
+{% endblock %}
 
-    <body>
+{% block body_block %}
         <div>
-            <strong>{{ boldmessage }}</strong><br />
-            This tutorial has been put together by Millie Norton! <br />
+            Rango says here is the about page <br />
+            <strong>{{ boldmessage }}</strong>
         </div>
         <div>
+            <a href = "http://127.0.0.1:8000/">Index</a><br />
             <img src="{% static "images/rango.jpg" %}" alt="Rango: A Green Lizard" /><br />
             <img src="{{ MEDIA_URL }}images/cat.jpg">
         </div>
-    </body>
-</html>
+
+{% endblock %}

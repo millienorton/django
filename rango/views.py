@@ -11,9 +11,9 @@ def index(request):
     return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
-    context_dict = {'boldmessage': "Hello!"}
+    context_dict = {'boldmessage': "This tutorial has been put together by Millie Norton!"}
     return render(request, 'rango/about.html', context = context_dict)
-    return HttpResponse("Rango says here is the about page")
+    #return HttpResponse("Rango says here is the about page")
 
 def show_category(request, category_name_slug):
     # Create a context dictionary, which we can pass to the template rendering engine
